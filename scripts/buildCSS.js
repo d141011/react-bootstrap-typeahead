@@ -22,8 +22,7 @@ function buildCSS(options, outdir) {
       console.log(err);
       process.exit(1);
     }
-
-    fs.writeFileSync(path.join(outdir, `${filename}.css`), result.css);
+    fs.writeFileSync(`${filename}.css`, result.css);
   });
 }
 
