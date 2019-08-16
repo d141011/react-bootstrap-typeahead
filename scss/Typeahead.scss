@@ -33,8 +33,8 @@
 
     // Apply Bootstrap focus styles
     &.focus {
-      @include box-shadow(0 0 8px rgba(102, 175, 233, 0.6), inset 0 1px 1px rgba(0, 0, 0, .075));
-      border-color: #66afe9;
+      color: #161c2d;
+      border-color: #a7b9f6;
       outline: 0;
     }
 
@@ -90,13 +90,13 @@
   }
 
   &-token {
-    background-color: #e7f4ff;
+    background-color: rgba(51,94,234,.1);
     border: 0;
     border-radius: 2px;
-    color: #1f8dd6;
+    color: #335eea;
     display: inline-block;
     line-height: 1em;
-    margin: 0 3px 3px 0;
+    margin: 0 5px 5px 0;
     padding: 4px 7px;
     position: relative;
 
@@ -112,7 +112,7 @@
     }
 
     &-active {
-      background-color: #1f8dd6;
+      background-color: #1643d4;
       color: #fff;
       outline: none;
       text-decoration: none;
@@ -137,7 +137,7 @@
     @include animation(loader-animation 600ms infinite linear);
     border: 1px solid #d5d5d5;
     border-radius: 50%;
-    border-top-color: #1f8dd6;
+    border-top-color: #1643d4;
     display: block;
     height: 16px;
     width: 16px;
