@@ -7,7 +7,7 @@ const sass = require('node-sass');
 function buildCSS(options, outdir) {
   // Get the base filename.
   let filename = options.file
-    .split('/')
+    .split('\\')
     .pop()
     .replace('.scss', '');
 
@@ -22,7 +22,8 @@ function buildCSS(options, outdir) {
       console.log(err);
       process.exit(1);
     }
-    fs.writeFileSync(`${filename}.css`, result.css);
+    console.log(filename)
+    fs.writeFileSync(path.join(outdir,`${filename}.css`), result.css);
   });
 }
 
